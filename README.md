@@ -9,6 +9,12 @@ It is a simple calendar application that allows the user to save events for each
 * Bootstrap
 * jQuery
 
+# Screenshot of Project
+
+![](assets/demo.gif)
+
+# Link for Scheduler
+https://aulakhhardeep.github.io/work-day-scheduler/
 
 
 
