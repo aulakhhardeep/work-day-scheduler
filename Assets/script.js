@@ -10,6 +10,7 @@ var threePm = $("#15pm");
 var fourPm = $("#16pm");
 var fivePm = $("#17pm");
 
+
 var hour = moment().hours();
 var userInput;
 var hourSpan;
@@ -43,6 +44,7 @@ function initialize()
     
     var init5 = JSON.parse(localStorage.getItem("5PM"))
     fivePm.val(init5);
+
 }
 
 function text() {
@@ -76,5 +78,13 @@ $(document).ready(function() //load html and CSS before JavaScript
           localStorage.setItem(hourSpan, JSON.stringify(userInput));
       
 })
+});
+
+$(".delBtn").on("click", function()
+{
+
+    localStorage.clear();
+    initialize();
+
 });
 
